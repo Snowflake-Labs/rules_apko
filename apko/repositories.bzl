@@ -50,7 +50,7 @@ _ATTRS = {
 
 def _apko_repo_impl(repository_ctx):
     version = repository_ctx.attr.apko_version.lstrip("v")
-    url = "https://github.com/chainguard-dev/apko/releases/download/v{version}/apko_{version}_{platform}.tar.gz".format(
+    url = "https://github.com/Snowflake-Labs/apko/releases/download/v{version}/apko_{version}_{platform}.tar.gz".format(
         version = version,
         platform = repository_ctx.attr.platform,
     )
